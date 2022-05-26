@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
     <ion-toolbar>
         <ion-title>
-            Tab 1
+            Inicio
         </ion-title>
     </ion-toolbar>
 </ion-header>
@@ -12,6 +12,40 @@
             <ion-title size="large">Inicio</ion-title>
         </ion-toolbar>
     </ion-header>
-    <ion-searchbar placeholder="Pesquisar"></ion-searchbar>
+
+    <!--CONTEUDO DENTRO DA ABA-->
+    <ion-card>
+        <ion-card-header>
+            <ion-card-subtitle>Visão geral</ion-card-subtitle>
+            <ion-card-title>Sistema</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+            <ion-list>
+                <ion-item>
+                    <ion-label>Os</ion-label>
+                    <ion-note slot="end">Android</ion-note>
+                </ion-item>
+                <ion-item>
+                    <ion-label>Version</ion-label>
+                    <ion-note slot="end">10.0</ion-note>
+                </ion-item>
+                <ion-item>
+                    <ion-label>Status</ion-label>
+                    <ion-note slot="end" color="primary">Authorized</ion-note>
+                </ion-item>
+                <ion-item>
+                    <ion-label>Get Information</ion-label>
+                    <ion-note slot="end" color="danger">Manual</ion-note>
+                </ion-item>
+                <ion-item>
+                    <ion-label>App Version</ion-label>
+                    <ion-note slot="end" color="danger">0.0.1</ion-note>
+                </ion-item>
+            </ion-list>
+        </ion-card-content>
+    </ion-card>
+    <!--CONTEUDO DENTRO DA ABA FIM-->
+
     <app-explore-container name="Tab 1 page"></app-explore-container>
 </ion-content>
