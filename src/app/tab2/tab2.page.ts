@@ -21,6 +21,14 @@ export class Tab2Page {
       icon: 'calculator'
     },
     {
+      nome: 'Chat',
+      descricao: 'Chat privado entre usuários',
+      link: '',
+      versao: '0.0.1',
+      imgSrc: '../../assets/tools/crypt.png',
+      icon: 'key'
+    },
+    {
       nome: 'Crypter',
       descricao: 'Ferramenta de criptografia',
       link: '',
