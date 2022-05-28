@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
     <ion-toolbar>
         <ion-title>
-            Terminal
+            {{tituloAba}}
         </ion-title>
     </ion-toolbar>
 </ion-header>
@@ -9,85 +9,19 @@
 <ion-content [fullscreen]="true">
     <ion-header collapse="condense">
         <ion-toolbar>
-            <ion-title size="large">Terminal</ion-title>
+            <ion-title size="large">{{tituloAba}}</ion-title>
         </ion-toolbar>
     </ion-header>
     <!--Conteudo da aba-->
     <div class="telaTerminal">
         <ion-text color="danger">
-            <small>$run calculadora -r -b </small>
+            <small>$info terminal -x -r </small>
         </ion-text>
         <ion-text color="warning">
-            <small>[ <br> executando calculadora versao beta no modo root <br>]</small>
+            <small>[ <br> terminal em fase de desenvolvimento <br>]</small>
         </ion-text>
-        <ion-text color="secondary">
-            <small><ion-icon name="checkmark-sharp"></ion-icon> sucesso</small>
-        </ion-text>
-    </div>
-    <div class="telaTerminal">
-        <ion-text color="danger">
-            <small>$run calculadora -r -b </small>
-        </ion-text>
-        <ion-text color="warning">
-            <small>[ <br> executando calculadora versao beta no modo root <br>]</small>
-        </ion-text>
-        <ion-text color="secondary">
-            <small><ion-icon name="checkmark-sharp"></ion-icon> sucesso</small>
-        </ion-text>
-    </div>
-    <div class="telaTerminal">
-        <ion-text color="danger">
-            <small>$run calculadora -r -b </small>
-        </ion-text>
-        <ion-text color="warning">
-            <small>[ <br> executando calculadora versao beta no modo root <br>]</small>
-        </ion-text>
-        <ion-text color="secondary">
-            <small><ion-icon name="checkmark-sharp"></ion-icon> sucesso</small>
-        </ion-text>
-    </div>
-    <div class="telaTerminal">
-        <ion-text color="danger">
-            <small>$run calculadora -r -b </small>
-        </ion-text>
-        <ion-text color="warning">
-            <small>[ <br> executando calculadora versao beta no modo root <br>]</small>
-        </ion-text>
-        <ion-text color="secondary">
-            <small><ion-icon name="checkmark-sharp"></ion-icon> sucesso</small>
-        </ion-text>
-    </div>
-    <div class="telaTerminal">
-        <ion-text color="danger">
-            <small>$run calculadora -r -b </small>
-        </ion-text>
-        <ion-text color="warning">
-            <small>[ <br> executando calculadora versao beta no modo root <br>]</small>
-        </ion-text>
-        <ion-text color="secondary">
-            <small><ion-icon name="checkmark-sharp"></ion-icon> sucesso</small>
-        </ion-text>
-    </div>
-    <div class="telaTerminal">
-        <ion-text color="danger">
-            <small>$run calculadora -r -b </small>
-        </ion-text>
-        <ion-text color="warning">
-            <small>[ <br> executando calculadora versao beta no modo root <br>]</small>
-        </ion-text>
-        <ion-text color="secondary">
-            <small><ion-icon name="checkmark-sharp"></ion-icon> sucesso</small>
-        </ion-text>
-    </div>
-    <div class="telaTerminal">
-        <ion-text color="danger">
-            <small>$run calculadora -r -b </small>
-        </ion-text>
-        <ion-text color="warning">
-            <small>[ <br> executando calculadora versao beta no modo root <br>]</small>
-        </ion-text>
-        <ion-text color="secondary">
-            <small><ion-icon name="checkmark-sharp"></ion-icon> sucesso</small>
+        <ion-text color="primary">
+            <small><ion-icon name="alert-sharp"></ion-icon> warning</small>
         </ion-text>
     </div>
     <!--Conteudo da aba FIM-->
@@ -96,7 +30,7 @@
 <ion-footer>
     <ion-list>
         <ion-item>
-            <ion-input placeholder="Jairo$Root/"></ion-input>
+            <ion-input placeholder="Jairo$Root/" (click)="presentToastWithOptions()" maxlength="0"></ion-input>
             <ion-button color="danger" (click)="presentToastWithOptions()">
                 <ion-icon name="chevron-forward-circle-sharp"></ion-icon>
             </ion-button>

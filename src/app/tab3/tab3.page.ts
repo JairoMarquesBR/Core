@@ -8,6 +8,8 @@ import { ToastController } from '@ionic/angular';
 })
 export class Tab3Page {
 
+tituloAba = 'Terminal';
+
   constructor(public toastController: ToastController) {}
   async presentToastWithOptions() {
     const toast = await this.toastController.create({
