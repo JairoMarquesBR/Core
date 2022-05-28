@@ -1,3 +1,4 @@
+import { IFerramenta } from '../models/IFerramenta.model';
 import { Component } from '@angular/core';
 import { ToastController } from '@ionic/angular';
 
@@ -7,6 +8,27 @@ import { ToastController } from '@ionic/angular';
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page {
+
+  tituloAba = 'Ferramentas';
+
+  listaFerramentas: IFerramenta[] = [
+    {
+      nome: 'Calculadora',
+      descricao: 'Calculadora simples feita em TypeScript',
+      link: '',
+      versao: '0.0.1',
+      imgSrc: '../../assets/tools/calc.png',
+      icon: 'calculator'
+    },
+    {
+      nome: 'Crypter',
+      descricao: 'Ferramenta de criptografia',
+      link: '',
+      versao: '0.0.1',
+      imgSrc: '../../assets/tools/crypt.png',
+      icon: 'key'
+    }
+  ];
 
   constructor(public toastController: ToastController) {}
   async presentToastWithOptions() {
