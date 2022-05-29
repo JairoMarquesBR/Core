@@ -15,7 +15,7 @@ export class Tab2Page {
     {
       nome: 'Calculadora',
       descricao: 'Calculadora simples feita em TypeScript',
-      link: '',
+      link: '/calculadora',
       versao: '0.0.1',
       imgSrc: '../../assets/tools/calc.png',
       icon: 'calculator'
@@ -23,7 +23,7 @@ export class Tab2Page {
     {
       nome: 'Chat',
       descricao: 'Chat privado entre usuários',
-      link: '',
+      link: '/chat',
       versao: '0.0.1',
       imgSrc: '../../assets/tools/crypt.png',
       icon: 'key'
@@ -31,7 +31,7 @@ export class Tab2Page {
     {
       nome: 'Crypter',
       descricao: 'Ferramenta de criptografia',
-      link: '',
+      link: '/crypt',
       versao: '0.0.1',
       imgSrc: '../../assets/tools/crypt.png',
       icon: 'key'
@@ -41,8 +41,8 @@ export class Tab2Page {
   constructor(public toastController: ToastController) {}
   async presentToastWithOptions() {
     const toast = await this.toastController.create({
-      header: 'Ferramenta indisponivel',
-      message: 'Função em desenvolvimento',
+      header: 'Ferramenta em desenvolvimento',
+      message: 'Alguns bugs podem ocorrer na página',
       position: 'bottom',
       buttons: [
          {
